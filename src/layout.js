@@ -72,7 +72,7 @@ export function LeaveReview({movies, setMovies}) {
                         <label>Movie Title:<input ref={movieNameText} type="text" required /></label>
                     </div>
                     <div>
-                        <label>Release movieDate:<input ref={movieDateText} type="text" required /></label>
+                        <label>ReleaseDate:<input ref={movieDateText} type="text" required /></label>
                     </div>
                     <div>
                         <label>Lead Cast:<input ref={movieActorsText} type="text" required /></label>
@@ -111,6 +111,9 @@ function Header() {
     <>
       <header>
         <h1>KB Movie Review Website:</h1>
+        <nav>
+            <Link to="LeaveReview">Click here to leave a new review</Link>
+        </nav>
       </header>
     </>
     );
