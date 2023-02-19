@@ -16,9 +16,25 @@ export function Home({movies, setMovies}) {
           </>
         );
     }
+    function MovieList( { movies = [], onRemoveMovie = f => f}) {
+        return (
+            <>
+                {movies.map( movie => (
+                    <Movie key={movie.movieName} {...movie} onRemove={onRemoveMovie} />
+                ))}
+            </>
+        );
+    }
+
     return (
         <>
             <Header />
+            <MovieList 
+                movies={movies} 
+                onRemoveMovie={ movieName => {
+                const newMovies = movies.filter(movie => movie.movieName !== movieName);
+                setMovies(newMovies);
+            }} />
             <Footer/>
         </>
     );
