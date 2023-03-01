@@ -4,6 +4,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 import { useRef } from 'react';
+import {Navbar, Nav } from 'react-bootstrap';
 
 export function Home({movies, setMovies}) {
     function Movie( {movieName, movieDate, movieActors, moviePoster, movieRating, onRemove = f => f} ) {
@@ -49,6 +50,7 @@ export function LeaveReview({movies, setMovies}) {
         const movieNameText = useRef();
         const movieDateText = useRef();
         const movieActorsText = useRef();
+        let [poster, setPoster] = useState("");
         const movieRatingText = useRef();
     
         const submit = e => {
@@ -111,10 +113,16 @@ function Header() {
     return (
     <>
       <header>
-        <h1>KB Movie Review Website:</h1>
-        <nav>
-            <Link to="LeaveReview">Click here to leave a new review</Link>
-        </nav>
+        <h1>KB Movie Reviews</h1>
+        <div>
+        <Navbar bg="dark" variant="dark"> 
+            <Nav>
+            <Nav.Link href="/"> Home</Nav.Link>
+            <Nav.Link href="/leavereview"> Leave a review </Nav.Link>
+            </Nav>
+        
+        </Navbar>
+        </div>
       </header>
     </>
     );
