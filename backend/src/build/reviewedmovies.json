@@ -1,0 +1,23 @@
+[
+    {
+        "movieName" : "Avatar 2", 
+        "movieDate" : "December 16, 2022",
+        "movieActors" : ["Sam Worthington", "Zoë Saldana"],
+        "moviePoster" : "/images/avatar2.jpg",
+        "movieRating" : 4.9
+    },
+    {
+        "movieName" : "No Time to Die", 
+        "movieDate" : "September 30, 2021",
+        "movieActors" : ["Daniel Craig", "Rami Malek"],
+        "moviePoster" : "/images/jamesbond.jpg",
+        "movieRating" : 4.8
+    },
+    {
+        "movieName" : "Top Gun: Maverick", 
+        "movieDate" : "May 27, 2022",
+        "movieActors" : ["Tom Cruise", "Miles Teller"],
+        "moviePoster" : "/images/topgun.jpg",
+        "movieRating" : 4.7
+    }
+]
