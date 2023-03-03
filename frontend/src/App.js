@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+//Project completed by Kyle burden
+//20165611
+
 import './App.css';
 import { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
